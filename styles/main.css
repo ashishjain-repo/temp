@@ -1,36 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+:root{
+    --arizonia:'Arizonia', cursive;
+    --pacifico:'Pacifico', cursive;
+    --allura: 'Allura', cursive;
+    --windsong:'WindSong', cursive;
+    --greatVibes:'Great Vibes', cursive;
+    --rochester: 'Rochester', cursive;
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
-
+background-color: rgba(137, 196, 244,1);
 }
-header{
 
-}
-header > nav{
-    width: 100vw;
-    border: 1px solid black;
 
-}
-.nav-list{
+main{
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(4,1fr);
-    height: 5vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 700px 500px 100px;
     align-items: center;
-background-color: white;
+    justify-items: center;
 }
-.nav-list-links{
-    text-align: center;
-    text-decoration: none;
-    /*border: 1px solid black;*/
-    padding: .6em 0;
-    color: black;
-    font-weight: 900;
+.main-names{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 80%;
+    grid-column: 1/4;
+    justify-items: center;
+    align-items: center;
 }
-.nav-list-links:hover{
-background-color: black;
+.main-names-name{
     color: white;
- }
+    font-size: 9em;
+    font-family: var(--windsong);
+    text-shadow: .1em .1em .08em gray;
+}
+.main-names-heading{
+    color: black;
+font-size: 7em;
+    font-family: var(--allura);
+    text-shadow: .05em .05em 30px white;
+}
+.main-dates{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 80%;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+}
+.main-dates-head{
+word-spacing: .5em;
+    letter-spacing: .1em;
+    font-family: var(--greatVibes);
+    font-size: 5em;
+    color: white;
+}
+.main-dates-date{
+color: white;
+    font-size: 4em;
+    font-family: var(--rochester);
+}
+.main-dates-rsvp{
+
+}
+.main-rsvp{grid-column: 2/3}
+.rsvp{
+    grid-column: 2/3;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 1em 3em;
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    font-family: var(--pacifico);
+
+
+}
+.rsvp:hover{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+
+}
+
+
