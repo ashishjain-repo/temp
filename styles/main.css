@@ -19,7 +19,12 @@
 }
 
 body{
-background-color: rgba(137, 196, 244,1);
+/*background-color: rgba(137, 196, 244,1);*/
+    background-image:url("/images/mormon-temple-453130.jpg") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 
