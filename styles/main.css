@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+header{
+
+}
+header > nav{
+    width: 100vw;
+    border: 1px solid black;
+
+}
+.nav-list{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4,1fr);
+    height: 5vh;
+    align-items: center;
+background-color: white;
+}
+.nav-list-links{
+    text-align: center;
+    text-decoration: none;
+    /*border: 1px solid black;*/
+    padding: .6em 0;
+    color: black;
+    font-weight: 900;
+}
+.nav-list-links:hover{
+background-color: black;
+    color: white;
+ }
